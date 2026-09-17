@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Universitário Nacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="fotos/logo2.jpeg" alt="logo">
+    </div>
+
+    <nav class="caixa2">
+
+        <a href="index.html">Home</a>
+
+        <a href="programacao.html">Programação</a>
+
+        <a href="inscricao.html">Inscrição</a>
+    </nav>
+    <main>
+        <main class="sobre-conteudo">
+
+        <h1>Formulario de inscrição</h1>
+
+<section class="formulario">
+    <h2>Inscrição no Evento</h2>
+
+    <form>
+
+        
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"required>
+
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"required>
+
+        
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="">Selecione seu curso</option>
+            <option value="engenharia-software">Engenharia de Software</option>
+            <option value="administracao">Administração</option>
+            <option value="direito">Direito</option>
+            <option value="enfermagem">Enfermagem</option>
+            <option value="pedagogia">Pedagogia</option>
+        </select>
+
+        
+        <label for="periodo">Período:</label>
+        <select id="periodo" name="periodo" required>
+            <option value="">Selecione o período</option>
+            <option value="1">1º período</option>
+            <option value="2">2º período</option>
+            <option value="3">3º período</option>
+            <option value="4">4º período</option>
+            <option value="5">5º período</option>
+            <option value="6">6º período</option>
+            <option value="7">7º período</option>
+            <option value="8">8º período</option>
+        </select>
+
+        
+        <label for="evento">Evento desejado:</label>
+        <select id="evento" name="evento" required>
+            <option value="">Selecione um evento</option>
+            <option value="simposio">
+                Simpósio Nacional de Inovação e Tecnologia
+            </option>
+            <option value="feira">
+                Feira de Carreiras e Empregabilidade
+            </option>
+            <option value="hackathon">
+                Hackathon CUN: Soluções para a Comunidade
+            </option>
+            <option value="mostra">
+                Mostra Cultural e Festival de Música
+            </option>
+            <option value="jogos">
+                Jogos Universitários
+            </option>
+        </select>      
+        
+        <button type="submit" class="btn-inscricao">
+            Fazer inscrição
+        </button>
+
+    </form>
+</section>
+
+    </main>
+</body>

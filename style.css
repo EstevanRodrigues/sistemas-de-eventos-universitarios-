@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+
+.logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding:10px;
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+}
+
+.caixa2 {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #030101; 
+    padding: 20px;            
+    background-color: #476acc;
+}
+
+.caixa2 a{
+    text-decoration: none;
+    color: #030101;
+    font-size: 18px;
+}
+
+.caixa2 a:hover{
+    text-decoration: underline;
+}
+
+
+.sobre {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.sobre-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 32px;
+    color: #17365d;
+    margin-bottom: 25px;
+}
+
+.sobre-conteudo > p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.sobre h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #17365d;
+}
+
+.pilares {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: left;
+}
+
+.card-pilar {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s;
+}
+
+.card-pilar:hover {
+    text-decoration:underline
+}
+
+.card-pilar h3 {
+    color: #17365d;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-pilar p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.eventos{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.eventos h3{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #17365d;
+}
+
+footer{
+    padding: 10px;
+}
+
+.eventos {
+    width: 100%;
+    padding: 50px 8%;
+    background-color: #f5f5f5;
+}
+
+.eventos h1 {
+    text-align: center;
+    color: #17365d;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+
+
+.lista-eventos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+
+.card-evento {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s;
+}
+
+.card-evento:hover {
+    text-decoration: overline;
+}
+
+.card-evento > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.evento-info {
+    padding: 25px;
+}
+
+.evento-info h2 {
+    color: #17365d;
+    font-size: 22px;
+    margin: 12px 0 20px;
+}
+
+.evento-info p {
+    margin: 8px 0;
+    color: #444;
+}
+
+
+.categoria {
+    display: inline-block;
+
+    background-color: #967e7e;
+    color: white;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+.descricao {
+    line-height: 1.6;
+    margin-top: 20px !important;
+}
+
+
+.coluna{
+    flex-direction: column;
+}
+
+.fora {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dentro {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.entrar{
+    background: linear-gradient(135deg, #6a5acd, #483d8b);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* daqui pra baixo inscrição */
+.formulario {
+    width: 500px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;
+    border-color: #483d8b;
+    box-shadow: 0 0 5px rgba(72, 61, 139, 0.3);
+}
+
+
+.opcoes {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.opcoes label {
+    font-weight: normal;
+}
+
+
+.confirmacao {
+    margin: 10px 0 25px;
+}
+
+.confirmacao label {
+    font-weight: normal;
+}
+
+
+.btn-inscricao {
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6a5acd, #483d8b);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-inscricao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* DAQUI PRA BAIXO Programaçao */
+.tabela-programacao {
+    width: 95%;
+    margin: 40px auto;
+    overflow-x: auto;
+}
+
+.tabela-programacao table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabela-programacao th,
+.tabela-programacao td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.tabela-programacao thead th {
+    background-color: #476acc;
+    color: white;
+    font-size: 17px;
+}
+
+.tabela-programacao thead tr:first-child th {
+    font-size: 22px;
+    padding: 20px;
+}
+
+.tabela-programacao tbody td:first-child {
+    font-weight: bold;
+    background-color: #f3eeee;
+}
+
+.tabela-programacao tbody tr:hover {
+    background-color: #f8f8f8;
+}
+
+.tabela-programacao td strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
